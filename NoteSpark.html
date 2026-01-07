@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple NoteSpark</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 NoteSpark</h1>
+            <p>Create, edit, and manage your notes effortlessly</p>
+        </div>
+
+        <div class="input-section">
+            <div id="alert" class="alert alert-warning"></div>
+
+            <textarea
+                id="noteInput"
+                class="note-input"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <div class="input-buttons">
+                <button id="addBtn" class="btn btn-primary">Add Note</button>
+                <button id="clearBtn" class="btn btn-secondary">Clear</button>
+            </div>
+        </div>
+
+        <div class="notes-section">
+            <div id="notesContainer" class="notes-grid"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
